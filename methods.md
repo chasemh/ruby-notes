@@ -65,3 +65,8 @@ eval( "def myMethod; puts( 'You called my overwritten method!' ); end" )
 myMethod() # => You called my overwritten method!
 myOriginalMethod() # => You called myMethod!
 ```
+
+## Naming Conventions
+* Method ends in `?`: Returns a Boolean
+* Method ends in `!`: Method modifies the calling object in place
+* Method ends in `=`: Method is a setter
